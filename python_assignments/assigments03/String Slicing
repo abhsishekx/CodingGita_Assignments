@@ -1,0 +1,51 @@
+# ## Topic 6 — String Slicing
+
+
+#Q24
+# PYT
+# THO
+# YTHON
+
+#Q25
+# PROG
+# RAMMING
+# PROGRAMMING
+
+
+#Q26
+# PUTER
+# COMPU
+# MPUT
+
+
+#Q27
+# PTO
+# YHN
+# NOHTYP
+
+#Q28
+# text = input()
+# print(text[::-1])
+
+
+#29
+# text = input()
+# print(text[::2])
+
+
+# Q30
+# text = input()
+# print(text[:3])
+# print(text[-3:])
+
+
+#Q31
+# CEG
+# IGE
+# JHFDB
+
+#Q32
+# text = "BTECH-CSE-2026"
+# print(text[:5])
+# print(text[6:9])
+# print(text[10:])
