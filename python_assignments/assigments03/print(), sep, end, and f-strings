@@ -1,0 +1,25 @@
+# ## Topic 9 — print(), sep, end, and f-strings
+
+#Q49
+# 2026-09-09`
+
+#Q50
+# Hello Python
+
+# Q51
+# print(10, 20, 30, sep="-", end="\n")
+# print(40, 50, 60, sep="-")
+
+
+#Q52
+
+# name = input()
+# age = input()
+# city = input()
+# course = input()
+# print(f"Name: {name}\nAge: {age}\nCity: {city}\nCourse: {course}")
+
+
+# Q53
+# price = float(input())
+# print(f"{price:.2f}")
