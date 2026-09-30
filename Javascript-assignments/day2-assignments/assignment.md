@@ -64,15 +64,15 @@ try { console.log(c); } catch (e) { console.log(e.message); }
 
 Q7
 
-// var: allowed
+var: allowed
 var user = "Amit";
 var user = "Rahul";
 console.log(user);   
 
-// let: NOT allowed. Uncommenting the lines below gives
-// SyntaxError: Identifier 'user2' has already been declared
-// let user2 = "Amit";
-// let user2 = "Rahul";
+ let: NOT allowed. Uncommenting the lines below gives
+ SyntaxError: Identifier 'user2' has already been declared
+ let user2 = "Amit";
+ let user2 = "Rahul";
 
 Q8
 
