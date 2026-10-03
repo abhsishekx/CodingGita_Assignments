@@ -134,15 +134,16 @@ console.log(score);
 #Q11
 
 
-console.log(a);   // undefined
-console.log(b);   // ReferenceError: Cannot access 'b' before initialization
-console.log(c);   // (never reached)
+console.log(a);  
+console.log(b);  
+console.log(c); 
 
 var a = 10;
 let b = 20;
 const c = 30;
 
 #output 
+
 #undefined //var is hoisted to the top of its scope and automatically initialized with undefined. So a exists but has no value yet
 #refernce error//let and const are also hoisted, but they are not initialized.
 #never runs//let and const are also hoisted, but they are not initialized.
@@ -176,10 +177,10 @@ let decimal = 3.14;
 let text = "JavaScript";
 let isTrue = true;
 
-console.log(whole, typeof whole);       // 42 "number"
-console.log(decimal, typeof decimal);   // 3.14 "number"
-console.log(text, typeof text);         // JavaScript "string"
-console.log(isTrue, typeof isTrue);     // true "boolean"
+console.log(whole, typeof whole);      
+console.log(decimal, typeof decimal);   
+console.log(text, typeof text);       
+console.log(isTrue, typeof isTrue); 
 
 #output
 #42 "number"
@@ -200,17 +201,4 @@ console.log(b, typeof b);
 #null "object"
 
 
-#Q3--> Number Special Values
-
-let posInf = Infinity;
-let negInf = -Infinity;
-let notNum = NaN;
-let sci = 2.5e3;
-let readable = 1_000_000;
-
-console.log(posInf, typeof posInf);       // Infinity "number"
-console.log(negInf, typeof negInf);       // -Infinity "number"
-console.log(notNum, typeof notNum);       // NaN "number"
-console.log(sci, typeof sci);             // 2500 "number"
-console.log(readable, typeof readable);   // 1000000 "number"
 
