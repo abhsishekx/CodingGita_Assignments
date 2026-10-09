@@ -201,383 +201,383 @@ console.log(b, typeof b);
 #null "object"
 
 
-// // B] Assignment Operators
+// B] Assignment Operators
 
 
-// // 1. SIMPLE ASSIGNMENT (=)
+// 1. SIMPLE ASSIGNMENT (=)
  
-// Question-1
+Question-1
 
-// let studentName = "Priya";
-// let marks = 92;
+let studentName = "Priya";
+let marks = 92;
 
-// console.log(studentName, marks);
+console.log(studentName, marks);
 
 
-// Question-2
+Question-2
 
-// let score = 0;
+let score = 0;
 
-// console.log(score);
+console.log(score);
 
 
-// Question-3
+Question-3
 
-// let a = b = c = 50;
+let a = b = c = 50;
 
-// console.log(a, b, c);
+console.log(a, b, c);
 
 
-// Question-4
+Question-4
 
-// let x;
-// x = 100;
-// console.log(x);
+let x;
+x = 100;
+console.log(x);
 
-// // Output:
-// // 100
+// Output:
+// 100
 
 
-// Question-5
+Question-5
 
-// let p = 15;
-// let q = p;
-// q = 30;
-// console.log(p, q);
+let p = 15;
+let q = p;
+q = 30;
+console.log(p, q);
 
-// // Output:
-// // 15 30
+// Output:
+// 15 30
 
 
-// 2. ADD AND ASSIGN (+=)
+2. ADD AND ASSIGN (+=)
 
-// Question-1
+Question-1
 
-// let playerScore = 80;
-// playerScore += 25;
+let playerScore = 80;
+playerScore += 25;
 
-// console.log(playerScore);
+console.log(playerScore);
 
-// // Output:
-// // 105
+// Output:
+// 105
 
 
-// Question-2
+Question-2
 
-// let balance = 1500;
-// balance += 120;
+let balance = 1500;
+balance += 120;
 
-// console.log(balance);
+console.log(balance);
 
-// // Output:
-// // 1620
+// Output:
+// 1620
 
 
-// Question-3
+Question-3
 
-// let count = 10;
-// count += 5;
-// console.log(count);
+let count = 10;
+count += 5;
+console.log(count);
 
-// // Output:
-// // 15
+// Output:
+// 15
 
 
-// Question-4
+Question-4
 
-// let msg = "Good";
-// msg += " Morning";
-// console.log(msg);
+let msg = "Good";
+msg += " Morning";
+console.log(msg);
 
-// // Output:
-// // Good Morning
+// Output:
+// Good Morning
 
 
-// Question-5
+Question-5
 
-// let n = 20;
-// n += "5";
+let n = 20;
+n += "5";
 
-// console.log(n);
+console.log(n);
 
-// // Output:
-// // 205
+// Output:
+// 205
 
 
 
-// 3. SUBTRACT AND ASSIGN (-=)
+3. SUBTRACT AND ASSIGN (-=)
 
-// Question-1
+Question-1
 
-// let health = 100;
-// health -= 35;
+let health = 100;
+health -= 35;
 
-// console.log(health);
+console.log(health);
 
-// // Output:
-// // 65
+// Output:
+// 65
 
 
-// Question-2
+Question-2
 
-// let stock = 300;
-// stock -= 45;
+let stock = 300;
+stock -= 45;
 
-// console.log(stock);
+console.log(stock);
 
-// // Output:
-// // 255
+// Output:
+// 255
 
 
-// Question-3
+Question-3
 
-// let lives = 5;
-// lives -= 2;
-// console.log(lives);
+let lives = 5;
+lives -= 2;
+console.log(lives);
 
-// // Output:
-// // 3
+// Output:
+// 3
 
 
-// Question-4
+Question-4
 
-// let num = "40";
-// num -= 15;
-// console.log(num);
+let num = "40";
+num -= 15;
+console.log(num);
 
-// // Output:
-// // 25
+// Output:
+// 25
 
 
-// Question-5
+Question-5
 
-// let x1 = "abc";
-// x1 -= 5;
+let x1 = "abc";
+x1 -= 5;
 
-// console.log(x1);
+console.log(x1);
 
-// // Output:
-// // NaN
+// Output:
+// NaN
 
 
 
-// 4. MULTIPLY AND ASSIGN (*=)
+4. MULTIPLY AND ASSIGN (*=)
 
-// Question-1
+Question-1
 
-// let price = 500;
-// price *= 0.18;
+let price = 500;
+price *= 0.18;
 
-// console.log(price);
+console.log(price);
 
-// // Output:
-// // 590
+// Output:
+// 590
 
 
-// Question-2
+Question-2
 
-// let quantity = 8;
-// quantity *= 3;
+let quantity = 8;
+quantity *= 3;
 
-// console.log(quantity);
+console.log(quantity);
 
-// // Output:
-// // 24
+// Output:
+// 24
 
 
-// Question-3
+Question-3
 
-// let amount = 200;
-// amount *= 1.1;
-// console.log(amount);
+let amount = 200;
+amount *= 1.1;
+console.log(amount);
 
-// // Output:
-// // 220
+// Output:
+// 220
 
 
-// Question-4
+Question-4
 
-// let val = "7";
-// val *= 3;
-// console.log(val);
+let val = "7";
+val *= 3;
+console.log(val);
 
-// // Output:
-// // 21
+// Output:
+// 21
 
 
-// Question-5
+Question-5
 
-// let y = "hello";
-// y *= 2;
+let y = "hello";
+y *= 2;
 
-// console.log(y);
+console.log(y);
 
-// // Output:
-// // NaN
+// Output:
+// NaN
 
 
 
-// 5. DIVIDE AND ASSIGN (/=)
+5. DIVIDE AND ASSIGN (/=)
 
-// Question-1
+Question-1
 
-// let chocolates = 180;
-// chocolates /= 6;
+let chocolates = 180;
+chocolates /= 6;
 
-// console.log(chocolates);
+console.log(chocolates);
 
-// // Output:
-// // 30
+// Output:
+// 30
 
 
-// Question-2
+Question-2
 
-// let distance = 300;
-// distance /= 5;
+let distance = 300;
+distance /= 5;
 
-// console.log(distance);
+console.log(distance);
 
-// // Output:
-// // 60
+// Output:
+// 60
 
 
-// Question-3
+Question-3
 
-// let total = 400;
-// total /= 8;
-// console.log(total);
+let total = 400;
+total /= 8;
+console.log(total);
 
-// // Output:
-// // 50
+// Output:
+// 50
 
 
-// Question-4
+Question-4
 
-// let num2 = "100";
-// num2 /= 4;
-// console.log(num2);
+let num2 = "100";
+num2 /= 4;
+console.log(num2);
 
-// // Output:
-// // 25
+// Output:
+// 25
 
 
-// Question-5
+Question-5
 
-// let z = 50;
-// z /= 0;
+let z = 50;
+z /= 0;
 
-// console.log(z);
+console.log(z);
 
-// // Output:
-// // Infinity
+// Output:
+// Infinity
 
 
 
-// 6. MODULUS AND ASSIGN (%=)
+6. MODULUS AND ASSIGN (%=)
 
-// Question-1
+Question-1
 
-// let number = 47;
-// number %= 6;
+let number = 47;
+number %= 6;
 
-// console.log(number);
+console.log(number);
 
-// // Output:
-// // 5
+// Output:
+// 5
 
 
-// Question-2
+Question-2
 
-// let counter = 23;
-// counter %= 12;
+let counter = 23;
+counter %= 12;
 
-// console.log(counter);
+console.log(counter);
 
-// // Output:
-// // 11
+// Output:
+// 11
 
 
-// Question-3
+Question-3
 
-// let num3 = 29;
-// num3 %= 5;
-// console.log(num3);
+let num3 = 29;
+num3 %= 5;
+console.log(num3);
 
-// // Output:
-// // 4
+// Output:
+// 4
 
 
-// Question-4
+Question-4
 
-// let x2 = "17";
-// x2 %= 3;
-// console.log(x2);
+let x2 = "17";
+x2 %= 3;
+console.log(x2);
 
-// // Output:
-// // 2
+// Output:
+// 2
 
 
-// Question-5
+Question-5
 
-// let m = 15;
-// m %= 0;
+let m = 15;
+m %= 0;
 
-// console.log(m);
+console.log(m);
 
-// // Output:
-// // NaN
+// Output:
+// NaN
 
 
-// 7. EXPONENTIATION AND ASSIGN (**=)
+7. EXPONENTIATION AND ASSIGN (**=)
 
-// Question-1
+Question-1
 
-// let side = 5;
-// side **= 3;
+let side = 5;
+side **= 3;
 
-// console.log(side);
+console.log(side);
 
-// // Output:
-// // 125
+// Output:
+// 125
 
 
-// Question-2
+Question-2
 
-// let squareNumber = 4;
-// squareNumber **= 2;
+let squareNumber = 4;
+squareNumber **= 2;
 
-// console.log(squareNumber);
+console.log(squareNumber);
 
-// // Output:
-// // 16
+// Output:
+// 16
 
 
-// Question-3
+Question-3
 
-// let base = 2;
-// base **= 5;
-// console.log(base);
+let base = 2;
+base **= 5;
+console.log(base);
 
-// // Output:
-// // 32
+// Output:
+// 32
 
 
-// Question-4
+Question-4
 
-// let n1 = 4;
-// n1 **= 0.5;
-// console.log(n1);
+let n1 = 4;
+n1 **= 0.5;
+console.log(n1);
 
-// // Output:
-// // 2
+// Output:
+// 2
 
 
-// Question-5
+Question-5
 
-// let p1 = 2;
-// p1 **= -1;
+let p1 = 2;
+p1 **= -1;
 
-// console.log(p1);
+console.log(p1);
 
-// // Output:
-// // 0.5
+// Output:
+// 0.5
