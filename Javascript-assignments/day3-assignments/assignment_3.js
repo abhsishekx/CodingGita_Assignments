@@ -1,536 +1,268 @@
 
-// // B] ASSIGNMENT OPERATORS
+// // C] COMPARISON OPERATORS
 
-// // 1. SIMPLE ASSIGNMENT =
-
+// // 1. LOOSE EQUALITY 
 
 
 // // 1. 
 
-// let studentName = "Priya";
-// let marks = 92;
-
-// console.log(studentName);
-// console.log(marks);
+// console.log("25" == 25);
 
 // // Output:
-// // Priya
-// // 92
+// // true
+
+// // Explanation:
+// // == performs type conversion before comparison.
+// // "25" is converted into the number 25.
 
 
 
 // // 2. 
 
-// let score = 0;
-
-// console.log(score);
+// console.log(0 == false);
 
 // // Output:
-// // 0
+// // true
 
 
 
 // // 3. 
 
-// let a = b = c = 50;
-
-// console.log(a);
-// console.log(b);
-// console.log(c);
+// console.log(10 == "10");
+// console.log(null == undefined);
 
 // // Output:
-// // 50
-// // 50
-// // 50
+// // true
+// // true
+
+// // Explanation:
+// // 10 and "10" become equal after type conversion.
+// // null and undefined are loosely equal using ==.
 
 
 
 // // 4. 
 
-// let x;
-// x = 100;
-
-// console.log(x);
+// console.log("" == 0);
+// console.log([] == false);
 
 // // Output:
-// // 100
+// // true
+// // true
 
 // // Explanation:
-// // The variable x is declared first and then assigned the value 100.
+// // The empty string "" is converted to 0.
+// // An empty array [] is converted to an empty string,
+// // which is then converted to 0.
 
 
 
 // // 5. 
 
-// let p = 15;
-// let q = p;
-
-// q = 30;
-
-// console.log(p, q);
+// console.log(NaN == NaN);
 
 // // Output:
-// // 15 30
+// // false
 
 // // Explanation:
-// // q initially receives a copy of the value of p.
-// // Changing q later does not change p.
+// // NaN represents an invalid or unknown numeric result.
+// // NaN is not equal to itself.
+// // Therefore, NaN == NaN returns false.
 
 
 
-
-// // 2. ADD AND ASSIGN +=
-
+// // 2. LOOSE INEQUALITY !=
 
 
-// // 1.
-// let playerScore = 80;
 
-// playerScore += 25;
+// // 1. 
 
-// console.log(playerScore);
+// console.log("18" != 18);
 
 // // Output:
-// // 105
+// // false
+
+// // Explanation:
+// // == type conversion makes "18" and 18 equal.
+// // Therefore, != returns false.
 
 
 
 // // 2. 
 
-// let walletBalance = 1500;
+// let storedPassword = "1234";
+// let enteredPassword = 1234;
 
-// walletBalance += 120;
-
-// console.log(walletBalance);
+// console.log(storedPassword != enteredPassword);
 
 // // Output:
-// // 1620
+// // false
+
+// // Explanation:
+// // The values become equal after type conversion.
 
 
 
 // // 3. 
 
-// let count = 10;
-
-// count += 5;
-
-// console.log(count);
+// console.log(5 != "5");
+// console.log(0 != false);
 
 // // Output:
-// // 15
-
-
-
-// // 4.
-
-// let msg = "Good";
-
-// msg += " Morning";
-
-// console.log(msg);
-
-// // Output:
-// // Good Morning
-
-// // Explanation:
-// // += also works with strings and joins the strings together.
-
-
-
-// // 5. 
-// let n = 20;
-
-// n += "5";
-
-// console.log(n);
-
-// // Output:
-// // 205
-
-// // Explanation:
-// // Since "5" is a string, += performs string concatenation.
-// // 20 + "5" becomes "205".
-
-
-
-
-// // 3. SUBTRACT AND ASSIGN -=
-
-
-
-// // 1. 
-// let health = 100;
-
-// health -= 35;
-
-// console.log(health);
-
-// // Output:
-// // 65
-
-
-
-// // 2. 
-
-// let stock = 300;
-
-// stock -= 45;
-
-// console.log(stock);
-
-// // Output:
-// // 255
-
-
-
-// // 3.
-
-// let lives = 5;
-
-// lives -= 2;
-
-// console.log(lives);
-
-// // Output:
-// // 3
+// // false
+// // false
 
 
 
 // // 4. 
 
-// let num = "40";
-
-// num -= 15;
-
-// console.log(num);
+// console.log(null != undefined);
+// console.log("" != 0);
 
 // // Output:
-// // 25
-
-// // Explanation:
-// // The -= operator converts the numeric string "40" into a number.
-// // 40 - 15 = 25.
+// // false
+// // false
 
 
 
 // // 5. 
 
-// let x2 = "abc";
-
-// x2 -= 5;
-
-// console.log(x2);
+// console.log(NaN != NaN);
 
 // // Output:
-// // NaN
+// // true
 
 // // Explanation:
-// // "abc" cannot be converted into a number.
-// // Therefore, the subtraction results in NaN.
+// // NaN is not equal to itself.
+// // Therefore, the inequality comparison returns true.
 
 
 
-// // 4. MULTIPLY AND ASSIGN *=
+
+// // 3. STRICT EQUALITY ===
 
 
 
-// // 1.
-// let price = 500;
+// // 1. 
 
-// price *= 1.18;
-
-// console.log(price);
+// console.log("25" === 25);
 
 // // Output:
-// // 590
+// // false
+
+// // Explanation:
+// // === compares both value and data type.
+// // "25" is a string while 25 is a number.
+// // Therefore, they are not strictly equal.
 
 
 
 // // 2.
 
-// let quantity = 8;
-
-// quantity *= 3;
-
-// console.log(quantity);
+// console.log(0 === false);
+// console.log(null === undefined);
 
 // // Output:
-// // 24
+// // false
+// // false
+
+// // Explanation:
+// // 0 is a number and false is a boolean.
+// // null and undefined are different data types.
 
 
 
 // // 3. 
 
-// let amount = 200;
-
-// amount *= 1.1;
-
-// console.log(amount);
+// console.log(10 === "10");
+// console.log(true === 1);
 
 // // Output:
-// // 220
+// // false
+// // false
 
 
 
 // // 4. 
 
-// let val = "7";
-
-// val *= 3;
-
-// console.log(val);
+// console.log("" === 0);
+// console.log([] === false);
 
 // // Output:
-// // 21
+// // false
+// // false
 
 // // Explanation:
-// // The string "7" is converted into the number 7.
-// // 7 * 3 = 21.
+// // Strict equality does not perform type conversion.
+// // The values have different types.
 
 
 
 // // 5. 
 
-// let y = "hello";
-
-// y *= 2;
-
-// console.log(y);
-
-// // Output:
-// // NaN
-
 // // Explanation:
-// // "hello" cannot be converted into a number.
-// // Therefore, multiplication results in NaN.
+// // === is generally preferred because it checks both value and type.
+// // It does not perform unexpected type conversion.
+// // This makes the code more predictable and easier to understand.
 
 
 
 
-// // 5. DIVIDE AND ASSIGN /=
+// // 4. STRICT INEQUALITY !==
 
 
 
 // // 1. 
 
-// let chocolates = 180;
-
-// chocolates /= 6;
-
-// console.log(chocolates);
+// console.log("18" !== 18);
 
 // // Output:
-// // 30
+// // true
+
+// // Explanation:
+// // "18" is a string and 18 is a number.
+// // Since their types are different, !== returns true.
 
 
 
 // // 2. 
 
-// let distance = 300;
-
-// distance /= 5;
-
-// console.log(distance);
+// console.log(0 !== false);
+// console.log(null !== undefined);
 
 // // Output:
-// // 60
+// // true
+// // true
+
+// // Explanation:
+// // 0 is a number and false is a boolean.
+// // null and undefined are different types.
 
 
 
 // // 3. 
 
-// let total = 400;
-
-// total /= 8;
-
-// console.log(total);
+// console.log(5 !== "5");
+// console.log(true !== 1);
 
 // // Output:
-// // 50
-
-
-
-// // 4.
-
-// let num2 = "100";
-
-// num2 /= 4;
-
-// console.log(num2);
-
-// // Output:
-// // 25
-
-// // Explanation:
-// // The string "100" is converted into the number 100.
-// // 100 / 4 = 25.
-
-
-
-// // 5. 
-
-// let z = 50;
-
-// z /= 0;
-
-// console.log(z);
-
-// // Output:
-// // Infinity
-
-// // Explanation:
-// // Dividing a positive number by zero results in Infinity in JavaScript.
-
-
-
-
-// // 6. MODULUS AND ASSIGN %=
-
-
-
-// // 1. 
-
-// let number = 47;
-
-// number %= 6;
-
-// console.log(number);
-
-// // Output:
-// // 5
-
-
-
-// // 2. 
-
-// let counter = 23;
-
-// counter %= 12;
-
-// console.log(counter);
-
-// // Output:
-// // 11
-
-
-
-// // 3. 
-
-// let num3 = 29;
-
-// num3 %= 5;
-
-// console.log(num3);
-
-// // Output:
-// // 4
+// // true
+// // true
 
 
 
 // // 4. 
 
-// let x3 = "17";
-
-// x3 %= 3;
-
-// console.log(x3);
+// console.log("" !== 0);
+// console.log(NaN !== NaN);
 
 // // Output:
-// // 2
+// // true
+// // true
 
 // // Explanation:
-// // "17" is converted into the number 17.
-// // 17 % 3 = 2.
-
-
-
-// // 5. 
-
-// let m = 15;
-
-// m %= 0;
-
-// console.log(m);
-
-// // Output:
-// // NaN
-
-// // Explanation:
-// // A remainder cannot be calculated when the divisor is zero.
-// // Therefore, the result is NaN.
-
-
-
-// // 7. EXPONENTIATION AND ASSIGN **=
-
-
-
-// // 1. 
-
-// let cubeSide = 5;
-
-// cubeSide **= 3;
-
-// console.log(cubeSide);
-
-// // Output:
-// // 125
-
-
-
-// // 2.
-
-// let squareNumber = 4;
-
-// squareNumber **= 2;
-
-// console.log(squareNumber);
-
-// // Output:
-// // 16
-
-
-
-// // 3. 
-
-// let base = 2;
-
-// base **= 5;
-
-// console.log(base);
-
-// // Output:
-// // 32
-
-
-
-// // 4. 
-
-// let n2 = 4;
-
-// n2 **= 0.5;
-
-// console.log(n2);
-
-// // Output:
-// // 2
-
-// // Explanation:
-// // 4 ** 0.5 means the square root of 4.
-// // Therefore, the result is 2.
-
-
-
-// // 5. 
-
-// let p2 = 2;
-
-// p2 **= -1;
-
-// console.log(p2);
-
-// // Output:
-// // 0.5
-
-// // Explanation:
-// // 2 ** -1 = 1 / 2 = 0.5
+// // "" is a string while 0 is a number.
+// // Therefore, they are strictly different.
+// //
+// // NaN is not equal to itself.
+// // Therefore, NaN !== NaN returns true.
