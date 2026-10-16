@@ -4,18 +4,18 @@
 //1. Personal Information
 
 
-// let name = "Ayush";
-// let age = 18;
-// let city = "Ranchi";
+// let name = "Abhishek";
+// let age = 20;
+// let city = "jamshedpur";
 
 // console.log(name);
 // console.log(age);
 // console.log(city);
 
 // // Output:
-// // Ayush
-// // 18
-// // Ranchi
+// // Abhishek
+// // 20
+// // jamshedpur
 
 
 // // 2. Change the Score
